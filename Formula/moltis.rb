@@ -2,25 +2,25 @@ class Moltis < Formula
   desc "Personal AI gateway - one binary, multiple LLM providers"
   homepage "https://www.moltis.org/"
   license "MIT"
-  version "20260413.06"
+  version "20260414.02"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/moltis-org/moltis/releases/download/#{version}/moltis-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "1d31b08f3a1027a3d959e4d38f860064f00401cec62bc2b958e0b8e653b3568f"
+      sha256 "251a9fb36ef3bd03df63426a86a73de2ca3b2e88ee54c7109ae4ad969d71bace"
     else
       url "https://github.com/moltis-org/moltis/releases/download/#{version}/moltis-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "fd866b921e19f727ee8b57d2c1bf32d862af6c624fd1ce33384b37e2a1fa8c38"
+      sha256 "c871f7de36bfdbf463cbd474df80f1a3d962f351fc62e940122048bb40a5f111"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/moltis-org/moltis/releases/download/#{version}/moltis-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fc59672dbfdf9e5f1e8e0b9405108e122b0b34ddc98713b5b29a3031fffc78e0"
+      sha256 "ea687db01c809143893ff908dc11f9426559393c9381d2fe406ccb563f728fa9"
     else
       url "https://github.com/moltis-org/moltis/releases/download/#{version}/moltis-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3614e7a8566ccb3dbdb8b8c777c7089ae8997a52ab8fd8561a3033852cf55a53"
+      sha256 "62fc5a147647e513a5a0e4ca180ac48306f07940a16bc4fff377f6975a4e1c6c"
     end
   end
 
